@@ -1,0 +1,43 @@
+<div class="todoContainer">
+  <!-- Header : New List -->
+  <div class="todoHeaderContainer">
+    <div class="todoHeaderContainerOne">
+      <a href="javascript:void(0)" (click)="popup = true">New List</a>
+    </div>
+    <!-- Pop-up -->
+    <div class="overlay" *ngIf="popup">
+      <div class="popup">
+        <div class="content">
+          <h5>Hey Buddy!</h5>
+          <h6>Enter name for your new workspace</h6>
+          <input
+            type="text"
+            placeholder="Enter Workspace Name"
+            name=""
+            value=""
+            id="workspaceName"
+          />
+        </div>
+        <div class="buttonContainer">
+          <button type="button" class="create" (click)="createNewList()">
+            Create <i class="fa-solid fa-plus"></i>
+          </button>
+          <button type="button" class="close" (click)="popup = false">
+            Cancel <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Header: List, Schedule, Today -->
+    <div class="todoHeaderContainerTwo">
+      <a href="#list" routerLink="/">List</a>
+      <a href="#schedule" routerLink="/schedule">Schedule</a>
+      <a href="#today" routerLink="/today">Today</a>
+    </div>
+  </div>
+
+  <!-- Main Screen  -->
+  <div class="mainContainer">
+    <router-outlet></router-outlet>
+  </div>
+</div>
