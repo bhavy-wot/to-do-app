@@ -136,3 +136,11 @@
     justify-content: space-between;
     margin: 10px 0;
 }
+
+#workspaceTitle{
+    display: flex;
+    justify-content: flex-start center;
+    padding: 10px 10px 10px 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}

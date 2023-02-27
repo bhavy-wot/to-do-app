@@ -6,10 +6,10 @@ import { TodayComponent } from './today/today.component';
 import { TodoComponent } from './todo/todo.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: ListComponent,
-  },
+  // {
+  //   path: '',
+  //   component: ListComponent,
+  // },
   {
     path: 'today',
     component: TodayComponent,
